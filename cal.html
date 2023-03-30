@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cal.js"></script>
+    <style>
+        body{
+            margin-left: 200px;
+            background-color: rgba(235, 243, 234, 0);
+            background-image: url(./hand\ on\ desk.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: aliceblue;
+        }
+        span{
+            color: rgb(190, 201, 147);
+            /* color: rgba(197, 116, 116, 0.767); */
+            font-family: Arial, Helvetica, sans-serif;
+            /* font-weight: 400; */
+          
+           
+        }
+        input{
+            border-radius: 5px;
+            background-color: rgba(214, 230, 214, 0.945);
+        }
+        h1{
+            margin-left: -200px;
+        }
+        .div1{
+            margin-top: 60px;
+            /* background-image: url(./woman.jpg); */
+            background-size: contain;
+            /* padding-right: 100px; */
+            
+            background-repeat: no-repeat;
+            background-color: rgba(158, 161, 151, 0);
+        }
+    </style>
+</head>
+<body>
+    <form name="form1" >
+
+       
+     <h1>Welcome to <span>javascript</span> two input calculater</h1><br>
+     <div class="div1">
+        Enter your <span>first </span> number
+        <input type="text" name="nFirst" placeholder="0"><br><br>
+        Enter your <span>second </span>number
+        <input type="text" name="nSecond" placeholder="0" ><br><br>
+        <span>Answer</span> 
+        <input type="text" name="operation"   value=" " ><br><br>
+        <span>choose to calculate</span> 
+        <input type="button" name="Add" value="+" onclick="fnCall()">
+        <input type="button" name="subtract" value="-" onclick="subCall()">
+        <input type="button" name="multiply" value="*" onclick="mulCall()">
+        <input type="button" name="divide" value="/" onclick="divCall()">
+     </div>
+        
+    </form>
+
+    
+
+
+</body>
+</html>
